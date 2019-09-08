@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+ <title>Home page</title>
+ 
+ <style>
+ 
+	#Main
+	{
+		height:650px;
+		width:650px;
+		position:relative;
+		left:250px;
+		top:100px;
+	}
+	
+	form
+	{
+		position:absolute;
+		top:50px;
+		right:250px;
+		border: 3px solid #73AD21;
+	}
+	
+	input
+	{
+		width:250px;
+		height:25px;
+	}
+ </style>
+ 
+</head>
+<body>
+
+ <h1>This is a heading</h1>
+ 
+   <div id="Main" style="background-color:rgb(99,99,199);" >
+	 
+	 <form action="p1.php" method="post">
+	 
+		First Name<br>
+		<input type="text" name="FirstName" placeholder="Enter First Name" required />
+		<br>
+		Sir Name<br>
+		<input type="text" name="SirName" placeholder="Enter Sir Name"  required />
+		<br>
+		Phone<br>
+		<input type="text" name="Phone"  placeholder="Enter Phone" required />
+		<br><br>
+		<input type="submit" value="Submit" />
+		<br>
+	
+	</div>
+	
+	
+ 
+ </form>
+</body>
+</html>
