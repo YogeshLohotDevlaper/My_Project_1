@@ -2,58 +2,69 @@
 <html>
 <head>
  <title>Home page</title>
- 
- <style>
- 
-	#Main
-	{
-		height:650px;
-		width:650px;
-		position:relative;
-		left:250px;
-		top:100px;
-	}
-	
-	form
-	{
-		position:absolute;
-		top:50px;
-		right:250px;
-		border: 3px solid #73AD21;
-	}
-	
-	input
-	{
-		width:250px;
-		height:25px;
-	}
- </style>
- 
+  <style>
+
+        body{
+
+            background-color: rgb(91,47, 211)
+        }
+    
+        #d1
+        {
+            height: 700px;
+            width: 800px;
+            background-color: aquamarine;
+            border: 5px rgb(213,222, 111) solid;
+            position: relative;
+            top:50px;
+            left: 250px;
+        }
+
+        #d1 #d2
+        {
+            height: 600px;
+            width: 700px;
+            background-color: #00c7b0; 
+            border: 2px black solid;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        input[type=text],input[type=password]
+        {
+                        
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+        }
+    </style>
 </head>
 <body>
 
- <h1>This is a heading</h1>
- 
-   <div id="Main" style="background-color:rgb(99,99,199);" >
-	 
-	 <form action="p1.php" method="post">
-	 
-		First Name<br>
-		<input type="text" name="FirstName" placeholder="Enter First Name" required />
-		<br>
-		Sir Name<br>
-		<input type="text" name="SirName" placeholder="Enter Sir Name"  required />
-		<br>
-		Phone<br>
-		<input type="text" name="Phone"  placeholder="Enter Phone" required />
-		<br><br>
-		<input type="submit" value="Submit" />
-		<br>
-	
-	</div>
-	
-	
- 
- </form>
+        
+    <div id="d1">
+        <div id="d2">
+
+            <form action="DB.php" onsubmit="return velidet()">
+
+                First Name:<br/> 
+                <input type="text" name="FirstName" required/>
+                <br/>
+                Last Name:<br/> 
+                <input type="text" name="LastName" required/>
+                <br/>User Name:<br/> <input type="text" name="UserName" required/>
+                <br/>
+                Password: <br/><input type="password" name="UserPassword" required/>
+                <br/>
+                Reepid Password: <br/><input type="password" name="ReepidPassword" required/>
+                <br/>
+                <input type="button" value="Submit"/>
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
